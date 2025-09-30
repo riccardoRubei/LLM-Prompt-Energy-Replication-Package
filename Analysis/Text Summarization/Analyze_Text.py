@@ -24,9 +24,9 @@ task_length = False
 
 if len(sys.argv) > 3:
     task = sys.argv[3]
-    if(task!="rouge"and task!="rougeL" and task!="bleu" and task!="meteor" and task!="bert" and task!="length"):
+    if(task!="Rouge"and task!="RougeL" and task!="Bleu" and task!="Meteor" and task!="Bert" and task!="Length"):
         task = default_task
-    if(task=="length"):
+    if(task=="Length"):
         task = default_task
         task_length = True
     if sys.argv[1]=="Llama":
@@ -65,7 +65,7 @@ def bert_score(gt,answer):
     f1 = scores['f1'][0]
     return f1
 
-metrics_functions = {'rouge':rouge,'rougeL':rougeL,'bleu':bleu,'meteor':meteor,'bert':bert_score}
+metrics_functions = {'Rouge':rouge,'RougeL':rougeL,'Bleu':bleu,'Meteor':meteor,'Bert':bert_score}
 
 def loadAnswers(basePath):
     fileAnswers = {}
