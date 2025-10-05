@@ -46,7 +46,7 @@ Study on Software Engineering Tasks"
 - As a general suggestion, we recommend to create a clean virtual enviroment.
 
 ## Execution of The Analysis
-The execution is extremely simple, just open a terminal and use python plus some arguments.
+The execution is extremely simple, just go inside the analysis folder, open a terminal and use python plus some arguments.
 For all the analysis we included a default configuration, in case of no arguments.
 
 **Code Carbon Analysis**:
@@ -71,6 +71,6 @@ python Analyze_Text.py ARG1 ARG2 ARG3
 ARG1 = Llama | Codellama
 ARG2 = ZeroShot | OneShot | FewShots
 ARG3 = Rouge | RougeL | Bleu | Meteor | Bert | Length
-Example 1: python Analyze_Answers.py Llama ZeroShot Rouge
-Example 2: python Analyze_Answers.py Codellama OneShot Bert
+Example 1: python Analyze_Text.py Llama ZeroShot Rouge
+Example 2: python Analyze_Text.py Codellama OneShot Bert
 ```
